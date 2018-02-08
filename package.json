@@ -1,7 +1,7 @@
 {
   "name": "@mironal/firepad",
   "description": "Collaborative text editing powered by Firebase",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "author": "mironal",
   "contributors": [
     "Michael Lehenbauer <michael@firebase.com>",
