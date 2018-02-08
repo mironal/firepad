@@ -54,8 +54,8 @@
       //// Create Firepad.
       var firepad = Firepad(CodeMirror).fromCodeMirror(firepadRef, codeMirror, {
         defaultText: '// JavaScript Editing with Firepad!\nfunction go() {\n  var message = "Hello, world.";\n  console.log(message);\n}',
-        encrypter: null,
-        decrypter: null
+        encrypter: function(a) { console.log("enc", a); return a;},
+        decrypter: function(b) {console.log("dec", b); return b;}
       });
     }
 
