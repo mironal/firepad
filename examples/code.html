@@ -7,13 +7,13 @@
   <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
 
   <!-- CodeMirror and its JavaScript mode file -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/mode/javascript/javascript.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/codemirror.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/codemirror.css" />
 
   <!-- Firepad -->
-  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.css" />
-  <script src="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.min.js"></script>
+  <link rel="stylesheet" href="../dist/firepad.css" />
+  <script src="./../dist/firepad.js"></script>
 
   <style>
     html { height: 100%; }
@@ -31,6 +31,7 @@
   <div id="firepad-container"></div>
 
   <script>
+
     function init() {
       //// Initialize Firebase.
       //// TODO: replace with your Firebase project configuration.
@@ -51,7 +52,7 @@
       });
 
       //// Create Firepad.
-      var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, {
+      var firepad = Firepad(CodeMirror).fromCodeMirror(firepadRef, codeMirror, {
         defaultText: '// JavaScript Editing with Firepad!\nfunction go() {\n  var message = "Hello, world.";\n  console.log(message);\n}'
       });
     }
