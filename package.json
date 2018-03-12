@@ -40,8 +40,8 @@
     "package.json"
   ],
   "dependencies": {
-    "jsdom": ">3",
-    "firebase": "^3 || ^4"
+    "firebase": "^4",
+    "jsdom": "11.6.2"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
@@ -54,7 +54,7 @@
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-karma": "^0.8.3",
-    "jasmine-core": "^2.3.4",
+    "jasmine-core": "2.99.1",
     "karma": "^0.12.16",
     "karma-coverage": "^0.2.6",
     "karma-failed-reporter": "0.0.2",
